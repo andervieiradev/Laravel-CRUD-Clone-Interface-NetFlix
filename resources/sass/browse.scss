@@ -1,0 +1,426 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+body{
+    background: #141414;
+}
+header{
+    background: transparent;
+}
+
+header #menu{
+    background-image: -webkit-gradient(linear,to left to top,to left to bottom,color-stop(10%,rgba(0,0,0,.7)),color-stop(10%,rgba(0,0,0,0)));
+    /* background-image: -webkit-linear-gradient(top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0)); */
+    background-image: -moz- oldlinear-gradient(to top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    background-image: -o-linear-gradient(to top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    height: 68px;
+    padding: 0 4%;
+}
+.billboard{
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+.billboard-sub{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    padding-bottom: 40%;
+}
+.billboard-bg{
+    position: absolute;
+    width: 100% !important;
+    height: 56.25vw !important;
+    overflow: hidden;
+}
+.billboard-hero{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.billboard-hero .static-image{
+    position: absolute;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+}
+.billboard-bg .hero-vinheta-left{
+        background: -webkit-linear-gradient(13deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+        background: -moz- oldlinear-gradient(13deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+        background: -o-linear-gradient(13deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+        background: linear-gradient(77deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 26.09%;
+        bottom: 0;
+        opacity: 1;
+        -webkit-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        -moz-transition: opacity .5s;
+        transition: opacity .5s;
+}
+.billboard-bg .hero-vinheta-buttom{
+    background-image: -webkit-gradient(linear,to left to top,to left to bottom,from(rgba(20,20,20,0)),color-stop(15%,rgba(20,20,20,.15)),color-stop(29%,rgba(20,20,20,.35)),color-stop(44%,rgba(20,20,20,.58)),color-stop(68%,#141414),to(#141414));
+    background-image: -webkit-linear-gradient(to top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    background-image: -moz- oldlinear-gradient(to top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    background-image: -o-linear-gradient(to top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    width: 100%;
+    height: 14.7vw;
+    top: auto;
+    bottom: -1px;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.billboard-content{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 56.25vw !important;
+}
+.billboard-content .billboard-lateral{
+    position: absolute;
+    top: 0;
+    bottom: 35%;
+    left: 4%;
+    width: 36%;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.billboard-content .billboard-lateral .title{
+
+}
+.billboard-content .billboard-lateral .btn-assistir{
+    background: rgba(255, 255, 255);
+    border: none;
+    padding: 0.8vw;
+    padding-left: 2vw;
+    padding-right: 2.4vw;
+    font-size: clamp(10px, 1.6vw, 20px);
+    margin-right: 0.4vw;
+}
+.billboard-content .billboard-lateral .btn-assistir:hover{
+    background: rgb(209, 209, 209, 0.85);
+    border: none;
+
+}
+.billboard-content .billboard-lateral .btn-maisinfo{
+    background: rgb(109,109,109,0.75);
+    border: none;
+    padding: 0.8vw;
+    padding-left: 2vw;
+    padding-right: 2.4vw;
+    font-size: clamp(10px, 1.6vw, 20px);
+}
+.billboard-content .billboard-lateral .btn-maisinfo:hover{
+    background: rgba(70, 70, 70, 0.75);
+}
+.billboard-content .title-logo{
+    width: 90%;
+}
+.billboard-content .title-logo img{
+    width: 100%;
+}
+.billboard-content .description{
+    width: 100%;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+.billboard-content .description .title{
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.8vw;
+    width: 100%;
+    font-size: 2.6vw;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    margin-bottom: 1vw;
+}
+.billboard-content .description .sinopse{
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.8vw;
+    width: 100%;
+    font-size: 1.4vw;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+}
+
+.videos-row{
+    margin: 3vw 0;
+}
+.videos-row h2{
+    position: relative;
+    vertical-align: bottom;
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    color: #e5e5e5;
+    font-weight: 700;
+    z-index: 99;
+    margin: 0 4% .5em 4%;
+}
+.carousel {
+    /* background: #EEE; */
+    padding: 0;
+    z-index: 20 !important;
+    border: none;
+    outline: none;
+}
+
+.carousel:focus-visible{
+    outline: none;
+}
+
+.carousel-cell{
+    margin-right: 4px !important;
+    border-radius: 4px;
+    overflow: hidden;
+    opacity: 0.1;
+
+}
+
+.carousel-cell img{
+    width: 100%;
+}
+.carousel-cell.is-selected {
+    opacity: 1;
+}
+.carousel-cell.is-selected:hover {
+    opacity: 0.9;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 500px) {
+    /* 2 cards */
+    .carousel-cell{
+        width: 40%;
+    }
+    .flickity-prev-next-button{
+        top: 50%;
+        width: 8%;
+        height: 100%;
+        border-radius: 0;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .flickity-page-dots{
+        display: none;
+    }
+}
+@media only screen and (min-width: 500px) {
+    /* 3 cards */
+     .carousel-cell{
+        width: 28%;
+    }
+    .flickity-prev-next-button{
+        top: 50%;
+        width: 6%;
+        height: 100%;
+        border-radius: 0;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .flickity-page-dots{
+        display: none;
+    }
+}
+@media only screen and (min-width: 800px) {
+    /* 4 cards */
+    .carousel-cell{
+        width: 23%;
+    }
+    .flickity-prev-next-button{
+        top: 50%;
+        width: 3%;
+        height: 100%;
+        border-radius: 0;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .carousel:hover .flickity-page-dots{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    /* 5 cards */
+    .carousel-cell{
+        width: 18%;
+    }
+    .flickity-prev-next-button{
+        top: 50%;
+        width: 4%;
+        height: 100%;
+        border-radius: 0;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .carousel:hover .flickity-page-dots{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    /* 6 cards */
+   .carousel-cell{
+        width: 15%;
+    }
+    .flickity-prev-next-button{
+        top: 50%;
+        width: 4%;
+        height: 100%;
+        border-radius: 0;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .carousel:hover .flickity-page-dots{
+        display: block;
+    }
+}
+.flickity-prev-next-button{
+    background: #141414;
+    border: none;
+}
+.flickity-prev-next-button:hover{
+    background: #161616;
+}
+/* flickity-button flickity-prev-next-button previous
+flickity-button flickity-prev-next-button next */
+.flickity-prev-next-button.previous{
+    display: none;
+    left: 0px;
+    background: rgb(20,20,20);
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(8,8,8,0.003) 85%, rgba(0,0,0,0) 100%);
+
+}
+.flickity-prev-next-button.next{
+    display: none;
+    right: 0px;
+    background: rgb(20,20,20);
+    background: linear-gradient(270deg, rgba(20,20,20,1) 0%, rgba(8,8,8,0.003) 85%, rgba(0,0,0,0) 100%);
+}
+
+.flickity-button-icon{
+    color:#ffffff !important;
+    fill:  #FFFFFF;
+    z-index: 999;
+}
+.flickity-button-icon:hover{
+    color:#ffffff !important;
+    transform: scale(1.40);
+}
+.flickity-button:disabled{
+    background: none;
+}
+.flickity-button:disabled .flickity-button-icon{
+    color:none !important;
+    fill: none !important;
+}
+
+.carousel:hover .flickity-prev-next-button.previous, .carousel:hover .flickity-prev-next-button.next{
+    display: block;
+}
+.flickity-page-dots{
+    position: absolute;
+    width: 30%;
+    top: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    right: 30px;
+    height: 20px;
+    text-align: right;
+}
+.flickity-page-dots .dot{
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    margin: 0 1px;
+    background: #aaa;
+    border-radius: 0%;
+    cursor: pointer;
+}
+.flickity-page-dots .dot.is-selected{
+
+}
+
+footer{
+    padding: 5vw 0;
+    color: grey;
+    font-size: 1.0rem;
+}
+footer .redesocial{
+    font-size: 2.0rem;
+}
+footer .redesocial a{ color: gray; margin: 0 0.5vw;}
+footer .redesocial a:hover{
+    color: rgb(112, 112, 112);
+}
+footer ul{}
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    text-align: start;
+}
+footer ul li a{ color: gray; }
+footer ul li a:hover{ color: rgb(112, 112, 112); }
+
