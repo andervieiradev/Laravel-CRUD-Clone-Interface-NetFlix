@@ -13,6 +13,7 @@ class Content extends Model
         'name',
         'sinopse',
         'urlLogo',
+        'urlBackground',
         'urlThumbVertical',
         'urlThumbHorizontal',
         'urlTrailer',
